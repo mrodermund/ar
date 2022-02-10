@@ -1,0 +1,72 @@
+
+<!--
+    Example of custom banner supporting the three available customHeights
+-->
+<html lang="en">
+<head>
+<meta name="viewport" content="maximum-scale=1, minimum-scale=1, initial-scale=1" />
+
+<style type="text/css">
+    div {
+        font-family: SalesforceSansLight,Helvetica,Arial,sans-serif!important;
+        color: #032d60;
+    }
+    #wrapper {
+        padding: 2px 15px;
+    }
+    #medium, #large {
+        color: ##032d60;
+        display: none;
+        font-size: 13pt;
+    }
+    /* Adjustments for medium customHeight banner */
+    @media only screen and (min-height: 121px) {
+        #wrapper {
+            padding: 15px;
+        }
+        #medium {
+            padding-top: 10px;
+            display: block;
+        }
+    }
+    /* Adjustments for large customHeight banner */
+    @media only screen and (min-height: 161px) {
+        #wrapper {
+            padding: 18px;
+        }
+        #medium {
+            padding-top: 15px;
+        }
+        #large {
+            display: block;
+        }
+    }
+    /* Adjustments for devices with smaller widths */
+    @media only screen and (max-width: 363px and min-height: 121px) {
+        #wrapper {
+            padding: 2px 10px;
+        }
+    }
+    @media only screen and (max-width: 414px) {
+        div {
+            letter-spacing: -1px;
+        }
+    }
+</style>
+</head>
+
+<body style="margin: 0px; background-color:#eaf5fe; overflow: hidden;">
+    <div id="wrapper" style="align-items: center; box-sizing: border-box; display: inline-flex; flex-direction: row; text-align: left; width: 100%;">
+        <div style="margin-right: 0px; display: flex; flex-direction: column; flex: 1 1 0%;">
+            <div style="font-size: 16pt; font-weight: bold;">Ignite x IKEA</div>
+            <div style="font-size: 12pt;">Check out the project</span></div>
+        </div>
+
+        <div style="align-items: center; display: inline-flex; margin: 10px 0px 5px -100px;">
+            <img id="chat">
+                <svg width="54" height="54" class="c-nav--footer__svgicon c-slackhash" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M19.712.133a5.381 5.381 0 0 0-5.376 5.387 5.381 5.381 0 0 0 5.376 5.386h5.376V5.52A5.381 5.381 0 0 0 19.712.133m0 14.365H5.376A5.381 5.381 0 0 0 0 19.884a5.381 5.381 0 0 0 5.376 5.387h14.336a5.381 5.381 0 0 0 5.376-5.387 5.381 5.381 0 0 0-5.376-5.386" fill="#36C5F0"></path><path d="M53.76 19.884a5.381 5.381 0 0 0-5.376-5.386 5.381 5.381 0 0 0-5.376 5.386v5.387h5.376a5.381 5.381 0 0 0 5.376-5.387m-14.336 0V5.52A5.381 5.381 0 0 0 34.048.133a5.381 5.381 0 0 0-5.376 5.387v14.364a5.381 5.381 0 0 0 5.376 5.387 5.381 5.381 0 0 0 5.376-5.387" fill="#2EB67D"></path><path d="M34.048 54a5.381 5.381 0 0 0 5.376-5.387 5.381 5.381 0 0 0-5.376-5.386h-5.376v5.386A5.381 5.381 0 0 0 34.048 54m0-14.365h14.336a5.381 5.381 0 0 0 5.376-5.386 5.381 5.381 0 0 0-5.376-5.387H34.048a5.381 5.381 0 0 0-5.376 5.387 5.381 5.381 0 0 0 5.376 5.386" fill="#ECB22E"></path><path d="M0 34.249a5.381 5.381 0 0 0 5.376 5.386 5.381 5.381 0 0 0 5.376-5.386v-5.387H5.376A5.381 5.381 0 0 0 0 34.25m14.336-.001v14.364A5.381 5.381 0 0 0 19.712 54a5.381 5.381 0 0 0 5.376-5.387V34.25a5.381 5.381 0 0 0-5.376-5.387 5.381 5.381 0 0 0-5.376 5.387" fill="#E01E5A"></path></g></svg>
+            </img>
+        </div>
+    </div>
+</body>
+</html>
